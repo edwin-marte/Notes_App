@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/noteTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/title"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/noteDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/description"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/deleteNoteButton"
+                android:layout_width="62dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/delete_button"
+                android:paddingTop="20dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp"
+                android:src="@drawable/trashcanicon"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
