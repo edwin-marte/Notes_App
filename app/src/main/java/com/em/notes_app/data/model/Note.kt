@@ -1,4 +1,4 @@
-package com.example.notes_app.data.model
+package com.em.notes_app.data.model
 
 import android.os.Parcelable
 import androidx.room.ColumnInfo
