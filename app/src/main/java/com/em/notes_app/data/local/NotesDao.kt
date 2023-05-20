@@ -1,7 +1,7 @@
-package com.example.notes_app.data.local
+package com.em.notes_app.data.local
 
 import androidx.room.*
-import com.example.notes_app.data.model.NoteEntity
+import com.em.notes_app.data.model.NoteEntity
 
 @Dao
 interface NotesDao {
@@ -9,7 +9,7 @@ interface NotesDao {
     suspend fun getAllNotes():List<NoteEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertNote(note:NoteEntity)
+    suspend fun insertNote(note: NoteEntity)
 
     @Delete
     suspend fun delete(note: NoteEntity)
