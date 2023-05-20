@@ -1,4 +1,4 @@
-package com.example.notes_app.ui
+package com.em.notes_app.ui
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.notes_app.R
-import com.example.notes_app.core.BaseViewHolder
-import com.example.notes_app.data.model.NoteEntity
-import com.example.notes_app.databinding.NotesRecyclerviewRowBinding
+import com.em.notes_app.R
+import com.em.notes_app.core.BaseViewHolder
+import com.em.notes_app.data.model.NoteEntity
+import com.em.notes_app.databinding.NotesRecyclerviewRowBinding
 
 class RecyclerViewAdapter(
     private val context: Context,
