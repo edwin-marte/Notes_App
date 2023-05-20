@@ -1,4 +1,4 @@
-package com.example.notes_app.ui.notesdetails
+package com.em.notes_app.ui.notedetails
 
 import android.os.Build.VERSION.SDK_INT
 import android.os.Bundle
@@ -12,10 +12,10 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.example.notes_app.R
-import com.example.notes_app.data.model.NoteEntity
-import com.example.notes_app.databinding.FragmentNoteDetailsBinding
-import com.example.notes_app.presentation.MainViewModel
+import com.em.notes_app.R
+import com.em.notes_app.data.model.NoteEntity
+import com.em.notes_app.databinding.FragmentNoteDetailsBinding
+import com.em.notes_app.presentation.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -85,8 +85,10 @@ class NoteDetailsFragment : Fragment() {
 
     private fun setupSaveButton() {
         binding.saveButton.setOnClickListener {
-            viewModel.saveNote(NoteEntity(note.noteId, binding.noteTitle.text.toString(),
-                binding.noteDescription.text.toString()))
+            viewModel.saveNote(
+                NoteEntity(note.noteId, binding.noteTitle.text.toString(),
+                binding.noteDescription.text.toString())
+            )
             findNavController().navigateUp()
         }
     }
