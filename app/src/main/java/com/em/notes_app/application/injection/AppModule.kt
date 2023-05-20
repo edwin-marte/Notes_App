@@ -1,8 +1,8 @@
-package com.example.notes_app.application.injection
+package com.em.notes_app.application.injection
 
 import android.content.Context
 import androidx.room.Room
-import com.example.notes_app.data.local.AppDatabase
+import com.em.notes_app.data.local.AppDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

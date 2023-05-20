@@ -1,7 +1,7 @@
-package com.example.notes_app.data.local
+package com.em.notes_app.data.local
 
-import com.example.notes_app.data.model.NoteEntity
-import com.example.notes_app.core.Resource
+import com.em.notes_app.data.model.NoteEntity
+import com.em.notes_app.core.Resource
 import javax.inject.Inject
 
 class IDataSource @Inject constructor(private val appDatabase: AppDatabase): DataSource {
@@ -9,7 +9,7 @@ class IDataSource @Inject constructor(private val appDatabase: AppDatabase): Dat
         return Resource.Success(appDatabase.noteDao().getAllNotes())
     }
 
-    override suspend fun insertNoteIntoRoom(note:NoteEntity) {
+    override suspend fun insertNoteIntoRoom(note: NoteEntity) {
         appDatabase.noteDao().insertNote(note)
     }
 

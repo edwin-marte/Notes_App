@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/light_gray"
-        tools:context=".ui.MainFragment">
+        tools:context="com.em.notes_app.ui.MainFragment">
 
         <TextView
             android:id="@+id/textView"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="20dp"
-            android:text="+ Add New Note"
+            android:text="@string/add_new_note"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

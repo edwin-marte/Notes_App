@@ -1,8 +1,8 @@
-package com.example.notes_app.application
+package com.em.notes_app.application
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.notes_app.R
+import com.em.notes_app.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

@@ -1,8 +1,8 @@
-package com.example.notes_app.domain
+package com.em.notes_app.domain
 
-import com.example.notes_app.data.model.NoteEntity
-import com.example.notes_app.core.Resource
-import com.example.notes_app.data.local.DataSource
+import com.em.notes_app.data.model.NoteEntity
+import com.em.notes_app.core.Resource
+import com.em.notes_app.data.local.DataSource
 import javax.inject.Inject
 
 class IRepository @Inject constructor(private val dataSource: DataSource): Repository {

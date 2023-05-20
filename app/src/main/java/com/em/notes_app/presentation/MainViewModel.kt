@@ -1,11 +1,11 @@
-package com.example.notes_app.presentation
+package com.em.notes_app.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import androidx.lifecycle.viewModelScope
-import com.example.notes_app.data.model.NoteEntity
-import com.example.notes_app.domain.Repository
-import com.example.notes_app.core.Resource
+import com.em.notes_app.data.model.NoteEntity
+import com.em.notes_app.domain.Repository
+import com.em.notes_app.core.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -13,7 +13,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class MainViewModel @Inject constructor (private val repository: Repository): ViewModel() {
-    fun saveNote(note:NoteEntity) {
+    fun saveNote(note: NoteEntity) {
         viewModelScope.launch {
             repository.insertNote(note)
         }

@@ -1,4 +1,4 @@
-package com.example.notes_app.core
+package com.em.notes_app.core
 
 sealed class Resource<T> {
     class Loading<T> : Resource<T>()

@@ -1,4 +1,4 @@
-package com.example.notes_app.core
+package com.em.notes_app.core
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

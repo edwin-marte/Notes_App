@@ -1,4 +1,4 @@
-package com.example.notes_app.ui
+package com.em.notes_app.ui
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
@@ -16,11 +16,11 @@ import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.example.notes_app.R
-import com.example.notes_app.core.Resource
-import com.example.notes_app.data.model.NoteEntity
-import com.example.notes_app.databinding.FragmentMainBinding
-import com.example.notes_app.presentation.MainViewModel
+import com.em.notes_app.R
+import com.em.notes_app.core.Resource
+import com.em.notes_app.data.model.NoteEntity
+import com.em.notes_app.databinding.FragmentMainBinding
+import com.em.notes_app.presentation.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -98,7 +98,7 @@ class MainFragment : Fragment() {
                 is Resource.Failure -> {
                     Toast.makeText(
                         requireContext(),
-                        "An error ocurred while loading the data ${ result.exception }",
+                        "An error occurred while loading the data ${ result.exception }",
                         Toast.LENGTH_LONG
                     ).show()
                 }
